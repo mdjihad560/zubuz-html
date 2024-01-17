@@ -166,6 +166,52 @@
     }
 
     /*--------------------------------------------------------------
+    fugu CLIENT SLIDER
+    --------------------------------------------------------------*/
+    var zubuz_brand_slider3 = $('.zubuz-brand-slider3');
+    if (zubuz_brand_slider3.is_exist()) {
+      zubuz_brand_slider3.slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed: 10000,
+        cssEase: 'linear',
+        pauseOnHover: true,
+        adaptiveHeight: true,
+        responsive: [{
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 3
+          }
+        }, {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2
+          }
+        }]
+      });
+    }
+
+    /*--------------------------------------------------------------
+    fugu CLIENT SLIDER
+    --------------------------------------------------------------*/
+    var zubuz_t_slider = $('.zubuz-testimonial-slider');
+    if (zubuz_t_slider.is_exist()) {
+      zubuz_t_slider.slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        autoplay: false
+      });
+    }
+
+    /*--------------------------------------------------------------
     zubuz MAGNIFIC POPUP JS INIT
     ------------------------------------------------------------*/
     var popup_youtube = $('.video-init');

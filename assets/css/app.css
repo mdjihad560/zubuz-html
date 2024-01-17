@@ -312,13 +312,13 @@ h1,
   line-height: 1.04em;
   margin-bottom: 24px;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1600px) {
   h1,
   .h1 {
-    font-size: 90px;
+    font-size: 98px;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 1400px) {
   h1,
   .h1 {
     font-size: 70px;
@@ -1848,6 +1848,10 @@ header.zubuz-header-section.sticky-menu {
   background-color: var(--white-bg);
 }
 
+header.zubuz-header-section.white-menu.sticky-menu {
+  background-color: var(--dark-bg);
+}
+
 .zubuz-header-btn-wrap {
   display: flex;
   align-items: center;
@@ -1875,6 +1879,9 @@ header.zubuz-header-section.sticky-menu {
   }
 }
 
+.zubuz-footer-section.main-footer {
+  border-top: 1px solid var(--light-color);
+}
 .zubuz-footer-top {
   padding: 130px 0 100px;
 }
@@ -1897,12 +1904,15 @@ header.zubuz-header-section.sticky-menu {
   margin-bottom: 30px;
 }
 .zubuz-footer-textarea p {
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .zubuz-footer-textarea p {
     margin-bottom: 30px;
   }
+}
+.zubuz-footer-textarea.light p {
+  color: var(--white-color);
 }
 .zubuz-footer-title p {
   margin-bottom: 30px;
@@ -1939,6 +1949,21 @@ header.zubuz-header-section.sticky-menu {
 .zubuz-footer-menu ul li a:hover {
   color: var(--primary-color);
 }
+.zubuz-footer-menu.light ul li a {
+  color: var(--white-color);
+}
+.zubuz-footer-menu.info {
+  margin-left: 60px;
+}
+.zubuz-footer-menu.info ul li {
+  padding-left: 35px;
+  position: relative;
+}
+.zubuz-footer-menu.info ul li img {
+  left: 0;
+  top: 5px;
+  position: absolute;
+}
 .zubuz-footer-menu.extar-margin {
   margin-left: 80px;
 }
@@ -1960,6 +1985,13 @@ header.zubuz-header-section.sticky-menu {
     text-align: center;
   }
 }
+.zubuz-footer-bottom.center {
+  display: block;
+  text-align: center;
+}
+.zubuz-footer-bottom.light {
+  border-top: 1px solid var(--body-color);
+}
 
 @media (max-width: 767px) {
   .zubuz-copywright {
@@ -1968,6 +2000,39 @@ header.zubuz-header-section.sticky-menu {
 }
 .zubuz-copywright p {
   font-size: 16px;
+}
+.zubuz-copywright.light {
+  color: var(--white-color);
+}
+
+.zubuz-footer-btn {
+  width: 100%;
+  text-align: right;
+}
+@media (max-width: 991px) {
+  .zubuz-footer-btn {
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+
+.zubuz-footer-extra-top {
+  padding: 90px 0 120px;
+  border-bottom: 1px solid var(--body-color);
+}
+@media (max-width: 991px) {
+  .zubuz-footer-extra-top {
+    padding: 90px 0 100px;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .zubuz-footer-extra-top {
+    padding: 70px 0 80px;
+  }
+}
+.zubuz-footer-extra-title h2 {
+  color: var(--white-color);
 }
 
 /*1.2 components css*/
@@ -2236,39 +2301,78 @@ textarea::placeholder { /* Most modern browsers support this now. */
   opacity: 1;
 }
 
-.zubuz-subscribe {
+.zubuz-subscribe-one {
   position: relative;
 }
-.zubuz-subscribe input {
+.zubuz-subscribe-one input {
   height: 50px;
   border-radius: 3px;
   color: var(--body-color);
   border: 1px solid #ccc !important;
 }
-.zubuz-subscribe input:focus, .zubuz-subscribe input:focus {
+.zubuz-subscribe-one input:focus, .zubuz-subscribe-one input:focus {
   border: 1px solid var(--primary-color) !important;
 }
-.zubuz-subscribe input::-webkit-input-placeholder, .zubuz-subscribe input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+.zubuz-subscribe-one input::-webkit-input-placeholder, .zubuz-subscribe-one input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
   color: #666666;
   opacity: 1;
 }
-.zubuz-subscribe input:-moz-placeholder, .zubuz-subscribe input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+.zubuz-subscribe-one input:-moz-placeholder, .zubuz-subscribe-one input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
   color: #666666;
   opacity: 1;
 }
-.zubuz-subscribe input::-moz-placeholder, .zubuz-subscribe input::-moz-placeholder { /* Mozilla Firefox 19+ */
+.zubuz-subscribe-one input::-moz-placeholder, .zubuz-subscribe-one input::-moz-placeholder { /* Mozilla Firefox 19+ */
   color: #666666;
   opacity: 1;
 }
-.zubuz-subscribe input:-ms-input-placeholder, .zubuz-subscribe input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+.zubuz-subscribe-one input:-ms-input-placeholder, .zubuz-subscribe-one input:-ms-input-placeholder { /* Internet Explorer 10-11 */
   color: #666666;
   opacity: 1;
 }
-.zubuz-subscribe input::-ms-input-placeholder, .zubuz-subscribe input::-ms-input-placeholder { /* Microsoft Edge */
+.zubuz-subscribe-one input::-ms-input-placeholder, .zubuz-subscribe-one input::-ms-input-placeholder { /* Microsoft Edge */
   color: #666666;
   opacity: 1;
 }
-.zubuz-subscribe input::placeholder, .zubuz-subscribe input::placeholder { /* Most modern browsers support this now. */
+.zubuz-subscribe-one input::placeholder, .zubuz-subscribe-one input::placeholder { /* Most modern browsers support this now. */
+  color: #666666;
+  opacity: 1;
+}
+.zubuz-subscribe-two {
+  max-width: 450px;
+  margin: 0 auto;
+  position: relative;
+}
+.zubuz-subscribe-two input {
+  height: 60px;
+  border-radius: 50px;
+  color: var(--body-color);
+  border: none;
+  background-color: var(--white-bg);
+}
+.zubuz-subscribe-two input:focus, .zubuz-subscribe-two input:focus {
+  border: 1px solid var(--primary-color) !important;
+}
+.zubuz-subscribe-two input::-webkit-input-placeholder, .zubuz-subscribe-two input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: #666666;
+  opacity: 1;
+}
+.zubuz-subscribe-two input:-moz-placeholder, .zubuz-subscribe-two input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #666666;
+  opacity: 1;
+}
+.zubuz-subscribe-two input::-moz-placeholder, .zubuz-subscribe-two input::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #666666;
+  opacity: 1;
+}
+.zubuz-subscribe-two input:-ms-input-placeholder, .zubuz-subscribe-two input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #666666;
+  opacity: 1;
+}
+.zubuz-subscribe-two input::-ms-input-placeholder, .zubuz-subscribe-two input::-ms-input-placeholder { /* Microsoft Edge */
+  color: #666666;
+  opacity: 1;
+}
+.zubuz-subscribe-two input::placeholder, .zubuz-subscribe-two input::placeholder { /* Most modern browsers support this now. */
   color: #666666;
   opacity: 1;
 }
@@ -2276,9 +2380,25 @@ textarea::placeholder { /* Most modern browsers support this now. */
 .zubuz-subscription-btn {
   top: 5px;
   right: 5px;
+  position: absolute;
+}
+.zubuz-subscription-btn.one {
   font-size: 14px;
   padding: 8px 15px;
-  position: absolute;
+}
+.zubuz-subscription-btn.two {
+  border-radius: 50px;
+  font-size: 16px;
+  padding: 13px 31px;
+}
+@media (max-width: 479px) {
+  .zubuz-subscription-btn.two {
+    position: static;
+    margin-top: 20px;
+    width: 100%;
+    color: var(--primary-color);
+    background-color: var(--white-bg);
+  }
 }
 
 .zubuz-navigation {
@@ -2349,12 +2469,32 @@ textarea::placeholder { /* Most modern browsers support this now. */
   margin: 0 auto;
   padding-bottom: 80px;
 }
+@media (max-width: 1400px) {
+  .zubuz-hero-content.center {
+    max-width: 800px;
+  }
+}
 .zubuz-hero-content.center p {
   max-width: 930px;
   margin: 0 auto 50px;
 }
+@media (max-width: 991px) {
+  .zubuz-hero-content.center p {
+    margin: 0 auto 30px;
+  }
+}
+@media (max-width: 991px) {
+  .zubuz-hero-content {
+    text-align: center;
+  }
+}
 .zubuz-hero-content p {
   margin-bottom: 50px;
+}
+@media (max-width: 991px) {
+  .zubuz-hero-content p {
+    margin-bottom: 30px;
+  }
 }
 .zubuz-hero-bottom {
   position: relative;
@@ -2365,7 +2505,7 @@ textarea::placeholder { /* Most modern browsers support this now. */
   transform: scale(0);
   opacity: 0;
   visibility: hidden;
-  transition: all 1s ease 1s;
+  transition: all 0.7s ease 0.7s;
   z-index: 0;
 }
 @media (max-width: 767px) {
@@ -2457,8 +2597,15 @@ textarea::placeholder { /* Most modern browsers support this now. */
 .zubuz-hero-btn-wrap {
   display: flex;
   align-items: center;
-  justify-content: center;
   column-gap: 24px;
+}
+.zubuz-hero-btn-wrap.center {
+  justify-content: center;
+}
+@media (max-width: 991px) {
+  .zubuz-hero-btn-wrap {
+    justify-content: center;
+  }
 }
 @media (max-width: 479px) {
   .zubuz-hero-btn-wrap {
@@ -2509,6 +2656,126 @@ textarea::placeholder { /* Most modern browsers support this now. */
     transform: translatex(0px);
   }
 }
+.zubuz_screenfix_right {
+  margin-right: calc((-100vw + 100%) / 2);
+  max-width: 1610px;
+}
+@media (max-width: 991px) {
+  .zubuz_screenfix_right {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.zubuz-hero-section2 {
+  position: relative;
+  padding: 170px 0 130px;
+}
+@media (max-width: 991px) {
+  .zubuz-hero-section2 {
+    padding: 160px 0 100px;
+  }
+}
+@media (max-width: 767px) {
+  .zubuz-hero-section2 {
+    padding: 160px 0 100px;
+  }
+}
+@media (max-width: 479px) {
+  .zubuz-hero-section2 {
+    padding: 120px 0 100px;
+  }
+}
+.zubuz-hero-rating {
+  margin-bottom: 20px;
+}
+.zubuz-hero-rating ul {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .zubuz-hero-rating ul {
+    justify-content: center;
+  }
+}
+.zubuz-hero-rating ul li {
+  font-size: 16px;
+  margin-right: 15px;
+}
+.zubuz-hero-rating ul li:last-child {
+  margin-right: 0;
+}
+.zubuz-hero-thumb2 {
+  left: 15px;
+  z-index: 0;
+  position: relative;
+  margin-left: 65px;
+}
+@media (max-width: 991px) {
+  .zubuz-hero-thumb2 {
+    left: 0;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+}
+
+.zubuz-hero-shape2 {
+  top: -15%;
+  right: 0;
+  z-index: -1;
+  position: absolute;
+}
+@media (max-width: 1250px) {
+  .zubuz-hero-shape2 img {
+    width: 300px;
+  }
+}
+@media (max-width: 991px) {
+  .zubuz-hero-shape2 {
+    display: none;
+  }
+}
+
+.zubuz-hero-shape3 {
+  position: absolute;
+  bottom: -10%;
+  left: -15%;
+  z-index: -1;
+}
+@media (max-width: 767px) {
+  .zubuz-hero-shape3 {
+    display: none;
+  }
+}
+
+.zubuz-counter-wrap {
+  display: flex;
+  gap: 100px;
+}
+@media (max-width: 991px) {
+  .zubuz-counter-wrap {
+    justify-content: center;
+    gap: 50px;
+  }
+}
+@media (max-width: 479px) {
+  .zubuz-counter-wrap {
+    justify-content: center;
+    gap: 10px;
+  }
+}
+.zubuz-counter-data h2 {
+  margin-bottom: 5px !important;
+}
+@media (max-width: 479px) {
+  .zubuz-counter-data h2 {
+    font-size: 48px;
+  }
+}
+.zubuz-counter-data p {
+  font-size: 18px;
+}
+
 .zubuz-iconbox-wrap-left {
   display: flex;
   max-width: 590px;
@@ -2518,7 +2785,7 @@ textarea::placeholder { /* Most modern browsers support this now. */
 .zubuz-iconbox-wrap-left:last-child {
   margin-bottom: 0;
 }
-.zubuz-iconbox-wrap-left .azubuz-iconbox-icon {
+.zubuz-iconbox-wrap-left .zubuz-iconbox-icon {
   margin-right: 24px;
 }
 .zubuz-iconbox-icon {
@@ -2532,6 +2799,13 @@ textarea::placeholder { /* Most modern browsers support this now. */
   justify-content: center;
   background-color: var(--secondary-color);
 }
+.zubuz-iconbox-icon.none-bg {
+  width: auto;
+  height: auto;
+  display: block;
+  margin-bottom: 0;
+  background-color: transparent;
+}
 .zubuz-iconbox-data span {
   font-weight: 600;
   display: block;
@@ -2539,6 +2813,13 @@ textarea::placeholder { /* Most modern browsers support this now. */
 }
 .zubuz-iconbox-data h3 {
   margin-bottom: 15px;
+}
+.zubuz-iconbox-data img {
+  width: 100%;
+  box-shadow: 0px 4px 80px 0px rgba(0, 0, 0, 0.08);
+}
+.zubuz-iconbox-data.data-small p {
+  font-size: 18px;
 }
 .zubuz-iconbox-wrap {
   padding: 30px;
@@ -2556,6 +2837,12 @@ textarea::placeholder { /* Most modern browsers support this now. */
 }
 .zubuz-iconbox-wrap:hover {
   border: 1px solid var(--heading-color);
+}
+.zubuz-iconbox-wrap2 {
+  border-radius: 10px;
+  padding: 40px 40px 0;
+  margin-bottom: 24px;
+  background-color: var(--light-bg);
 }
 
 .zubuz-accordion-wrap {
@@ -2775,6 +3062,91 @@ img.zubuz-video-circle {
   }
 }
 
+.zubuz-testimonial-slider {
+  max-width: 1085px;
+  margin: 0 auto;
+}
+
+.zubuz-testimonial-slider-section {
+  background-size: cover;
+  background-position: center;
+}
+.zubuz-testimonial-slider-item {
+  text-align: center;
+}
+.zubuz-testimonial-slider-rating {
+  margin-bottom: 50px;
+}
+@media (max-width: 991px) {
+  .zubuz-testimonial-slider-rating {
+    margin-bottom: 30px;
+  }
+}
+.zubuz-testimonial-slider-rating ul li {
+  display: inline-block;
+}
+.zubuz-testimonial-slider-data h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  line-height: 1.2em;
+  color: var(--white-color);
+}
+@media (max-width: 991px) {
+  .zubuz-testimonial-slider-data h3 {
+    font-size: 30px;
+  }
+}
+.zubuz-testimonial-slider-data p {
+  font-size: 40px;
+  margin-bottom: 20px;
+  line-height: 1.2em;
+  letter-spacing: -1px;
+  color: var(--white-color);
+}
+@media (max-width: 991px) {
+  .zubuz-testimonial-slider-data p {
+    font-size: 24px;
+    line-height: 1.4em;
+  }
+}
+@media (max-width: 767px) {
+  .zubuz-testimonial-slider-data p {
+    font-size: 20px;
+    line-height: 1.4em;
+  }
+}
+.zubuz-testimonial-slider-author {
+  margin-top: 50px;
+}
+@media (max-width: 991px) {
+  .zubuz-testimonial-slider-author {
+    margin-top: 35px;
+  }
+}
+.zubuz-testimonial-slider-author-thumb {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.zubuz-testimonial-slider-author-thumb img {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.zubuz-testimonial-slider-author-data span {
+  font-size: 24px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+  color: var(--white-color);
+}
+.zubuz-testimonial-slider-author-data p {
+  color: var(--white-color);
+}
+
 .zubuz-cta-section {
   padding-top: 100px;
 }
@@ -2820,6 +3192,37 @@ img.zubuz-video-circle {
   }
 }
 
+.zubuz-cta-wrap {
+  padding: 100px 20px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  border-radius: 40px;
+}
+@media (max-width: 991px) {
+  .zubuz-cta-wrap {
+    padding: 80px 20px;
+  }
+}
+@media (max-width: 767px) {
+  .zubuz-cta-wrap {
+    padding: 60px 20px;
+  }
+}
+.zubuz-cta-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.zubuz-cta-content h2 {
+  margin-bottom: 50px;
+  color: var(--white-color);
+}
+@media (max-width: 991px) {
+  .zubuz-cta-content h2 {
+    margin-bottom: 30px;
+  }
+}
+
 .zubuz-social-icon ul li {
   margin: 0 10px;
   display: inline-block;
@@ -2837,6 +3240,36 @@ img.zubuz-video-circle {
 }
 .zubuz-social-icon ul li a:hover {
   color: var(--primary-color);
+}
+
+.zubuz-social-icon.social-box ul li {
+  margin: 0 5px;
+}
+.zubuz-social-icon.social-box ul li:first-child {
+  margin-left: 0;
+}
+.zubuz-social-icon.social-box ul li:last-child {
+  margin-right: 0;
+}
+.zubuz-social-icon.social-box ul li a {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  border: 1px solid var(--heading-color);
+}
+.zubuz-social-icon.social-box ul li a:hover {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.zubuz-social-icon.social-box.social-box-white ul li a {
+  background-color: var(--white-bg);
+}
+.zubuz-social-icon.social-box.social-box-white ul li a:hover {
+  background-color: var(--primary-color);
 }
 
 .zubuz-brand-logo-content {
@@ -2860,6 +3293,25 @@ img.zubuz-video-circle {
 .zubuz-brand-slider2 {
   direction: rtl;
   margin-top: 30px;
+}
+
+.zubuz-brand-logo-wrap {
+  padding-bottom: 130px;
+  border-bottom: 1px solid var(--light-color);
+}
+.zubuz-brand-logo-wrap p {
+  margin-bottom: 50px;
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .zubuz-brand-logo-wrap {
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .zubuz-brand-logo-wrap {
+    padding-bottom: 80px;
+  }
 }
 
 .zubuz-list-icon {
@@ -2886,6 +3338,187 @@ img.zubuz-video-circle {
 }
 .zubuz-list-icon ul li:last-child {
   margin-bottom: 0;
+}
+
+.pricing-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+@media (max-width: 991px) {
+  .pricing-btn {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .pricing-btn {
+    margin-bottom: 40px;
+  }
+}
+.pricing-btn label {
+  font-weight: 700;
+  margin: 0 20px;
+  font-size: 18px;
+}
+@media (max-width: 767px) {
+  .pricing-btn label {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+}
+
+[data-pricing-dynamic][data-value-active=yearly] .dynamic-value:before {
+  display: inline-block;
+  content: attr(data-yearly);
+}
+
+[data-pricing-dynamic][data-value-active=yearly] [data-pricing-trigger] {
+  background: #ff5722;
+}
+
+[data-pricing-dynamic][data-value-active=yearly] [data-pricing-trigger] span {
+  left: calc(100% - 33px);
+}
+
+[data-pricing-dynamic][data-value-active=monthly] .dynamic-value:before {
+  display: inline-block;
+  content: attr(data-monthly);
+}
+
+.dynamic-value:before {
+  display: inline-block;
+  content: attr(data-active);
+}
+
+.static-value:before {
+  display: inline-block;
+  content: attr(data-active);
+}
+
+.pricing-btn .btn-toggle {
+  position: relative;
+  width: 70px !important;
+  height: 35px;
+  border-radius: 50px;
+  border: none;
+  margin: 0;
+  padding: 0 !important;
+  cursor: pointer;
+  background-size: 25px;
+  background-position: center right 5px;
+  background-color: var(--blue-bg) !important;
+  background-image: url(../images/v2/circle.png);
+}
+
+.pricing-btn .btn-toggle:focus {
+  outline: none;
+  box-shadow: none;
+  background-image: url(../images/v2/circle.png);
+}
+
+.pricing-btn .btn-toggle:checked {
+  background-position: center left 5px;
+  background-image: url(../images/v2/circle.png);
+}
+
+.zubuz-pricing-wrap {
+  border-radius: 10px;
+  margin-bottom: 24px;
+  padding: 40px;
+  border: 1px solid #CCCCCC;
+  background-color: var(--white-bg);
+  transition: all 0.4s;
+}
+.zubuz-pricing-wrap:hover {
+  border: 1px solid var(--white-color);
+  box-shadow: 0px 4px 80px 0px rgba(0, 0, 0, 0.08);
+}
+.zubuz-pricing-wrap.active {
+  border: 1px solid var(--white-color);
+  box-shadow: 0px 4px 80px 0px rgba(0, 0, 0, 0.08);
+}
+.zubuz-pricing-header {
+  margin-bottom: 20px;
+}
+.zubuz-pricing-price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.zubuz-pricing-price p {
+  margin: 0;
+  margin-top: 30px;
+  margin-left: 10px;
+  font-size: 16px;
+  color: #414141;
+}
+.zubuz-pricing-description {
+  padding-bottom: 22px;
+  margin-bottom: 22px;
+  border-bottom: 1px solid var(--light-color);
+}
+.zubuz-pricing-description p {
+  font-size: 18px;
+  color: #414141;
+  margin: 0;
+}
+.zubuz-pricing-body {
+  margin-bottom: 40px;
+}
+.zubuz-pricing-body ul li {
+  position: relative;
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 30px;
+  margin-bottom: 14px;
+}
+.zubuz-pricing-body ul li:last-child {
+  margin-bottom: 0;
+}
+.zubuz-pricing-body ul li img {
+  left: 0;
+  top: 9px;
+  position: absolute;
+}
+.zubuz-pricing-btn {
+  font-size: 16px;
+  font-weight: 700;
+  width: 100%;
+  height: 60px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  transition: all 0.4s;
+  color: var(--heading-color) !important;
+  border: 1px solid var(--heading-color);
+}
+.zubuz-pricing-btn:hover {
+  color: var(--white-color) !important;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.zubuz-pricing-btn.active {
+  color: var(--white-color) !important;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.zubuz-pricing-btn.active:hover {
+  background-color: var(--dark-bg);
+  border: 1px solid var(--dark-bg);
+}
+
+.zubuz-pricing-shape {
+  position: absolute;
+  top: 70px;
+  right: 0;
+}
+@media (max-width: 991px) {
+  .zubuz-pricing-shape {
+    display: none;
+  }
 }
 
 .zubuz-thumb {
@@ -2954,6 +3587,57 @@ img.zubuz-video-circle {
     transform: translatey(0px);
   }
 }
+.zubuz-v2-thumb {
+  position: relative;
+  z-index: 0;
+}
+.zubuz-v2-thumb.thumb-mr {
+  margin-right: 65px;
+}
+@media (max-width: 1199px) {
+  .zubuz-v2-thumb.thumb-mr {
+    margin-right: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .zubuz-v2-thumb.thumb-mr {
+    margin-right: 0;
+  }
+}
+.zubuz-v2-thumb.thumb-ml {
+  margin-left: 65px;
+}
+@media (max-width: 1199px) {
+  .zubuz-v2-thumb.thumb-ml {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .zubuz-v2-thumb.thumb-ml {
+    margin-left: 0;
+  }
+}
+@media (max-width: 991px) {
+  .zubuz-v2-thumb {
+    margin-bottom: 40px;
+  }
+}
+.zubuz-v2-thumb img {
+  border-radius: 10px;
+}
+.zubuz-v2-thumb-shape {
+  position: absolute;
+  left: -30%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+@media (max-width: 991px) {
+  .zubuz-v2-thumb-shape {
+    display: none;
+  }
+}
+
 .zubuz-section-padding {
   padding: 125px 0 130px;
 }
@@ -3047,6 +3731,21 @@ img.zubuz-video-circle {
 .zubuz-section-title.light h2 {
   color: var(--white-color);
 }
+@media (max-width: 991px) {
+  .zubuz-section-title.zubuz-two-column-title h2 {
+    margin-bottom: 20px;
+  }
+}
+
+.zubuz-title-btn {
+  width: 100%;
+  text-align: right;
+}
+@media (max-width: 991px) {
+  .zubuz-title-btn {
+    text-align: center;
+  }
+}
 
 .zubuz-default-content h2 {
   margin-bottom: 20px;
@@ -3082,6 +3781,36 @@ img.zubuz-video-circle {
 }
 
 /*1.3 pages css*/
+.zubuz-tools-wrap {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+@media (max-width: 1199px) {
+  .zubuz-tools-wrap {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 991px) {
+  .zubuz-tools-wrap {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .zubuz-tools-wrap {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.zubuz-tools-item {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid var(--light-color);
+}
+
 .zubuz-service-details-thumb {
   border-radius: 20px;
   overflow: hidden;
@@ -3139,114 +3868,6 @@ img.zubuz-video-circle {
 @media (max-width: 991px) {
   .zubuz-our-approach {
     margin-top: 30px;
-  }
-}
-
-.pricing-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 80px;
-}
-@media (max-width: 991px) {
-  .pricing-btn {
-    margin-bottom: 60px;
-  }
-}
-@media (max-width: 767px) {
-  .pricing-btn {
-    margin-bottom: 40px;
-  }
-}
-.pricing-btn label {
-  font-weight: 700;
-  margin: 0 20px;
-}
-@media (max-width: 767px) {
-  .pricing-btn label {
-    margin: 0 10px;
-    font-size: 16px;
-  }
-}
-
-[data-pricing-dynamic][data-value-active=yearly] .dynamic-value:before {
-  display: inline-block;
-  content: attr(data-yearly);
-}
-
-[data-pricing-dynamic][data-value-active=yearly] [data-pricing-trigger] {
-  background: #ff5722;
-}
-
-[data-pricing-dynamic][data-value-active=yearly] [data-pricing-trigger] span {
-  left: calc(100% - 33px);
-}
-
-[data-pricing-dynamic][data-value-active=monthly] .dynamic-value:before {
-  display: inline-block;
-  content: attr(data-monthly);
-}
-
-.dynamic-value:before {
-  display: inline-block;
-  content: attr(data-active);
-}
-
-.static-value:before {
-  display: inline-block;
-  content: attr(data-active);
-}
-
-.pricing-btn .btn-toggle {
-  position: relative;
-  width: 70px !important;
-  height: 35px;
-  border-radius: 50px;
-  border: none;
-  margin: 0;
-  padding: 0 !important;
-  cursor: pointer;
-  background-size: 25px;
-  background-position: center right 5px;
-  background-color: transparent !important;
-  border: 1px solid var(--heading-color) !important;
-  background-image: url(../images/icon/circle.svg);
-}
-
-.pricing-btn .btn-toggle:focus {
-  outline: none;
-  box-shadow: none;
-  background-image: url(../images/icon/circle.svg);
-}
-
-.pricing-btn .btn-toggle:checked {
-  background-position: center left 5px;
-  background-image: url(../images/icon/circle.svg);
-}
-
-.zubuz-errors-btn.contact-us {
-  width: 200px;
-  margin: 50px 0 0;
-}
-@media (max-width: 991px) {
-  .zubuz-errors-btn.contact-us {
-    margin: 0 auto;
-    margin-top: 30px;
-  }
-}
-
-.zubuz-pricing-border {
-  padding: 125px 0 130px;
-  border-bottom: 1px solid #E6E6E6;
-}
-@media (max-width: 991px) {
-  .zubuz-pricing-border {
-    padding: 100px 0;
-  }
-}
-@media (max-width: 767px) {
-  .zubuz-pricing-border {
-    padding: 80px 0;
   }
 }
 

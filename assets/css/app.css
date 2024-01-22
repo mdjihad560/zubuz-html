@@ -2219,7 +2219,7 @@ h3.entry-title {
   color: var(--primary-color);
 }
 
-.widget.aximo_recent_posts_Widget .post-date {
+.widget.zubuz_recent_posts_Widget .post-date {
   margin-bottom: 10px;
 }
 
@@ -2560,7 +2560,10 @@ button#comment-btn {
   margin-top: 26px;
 }
 
-.zubuz-default-btn, #comment-btn, #zubuz-submit-btn {
+.zubuz-default-btn,
+#comment-btn,
+#zubuz-submit-btn,
+#zubuz-account-btn {
   font-size: 16px;
   line-height: 24px;
   padding: 18px 40px;
@@ -2582,26 +2585,44 @@ button#comment-btn {
   z-index: 0;
   transform-style: preserve-3d;
 }
-.zubuz-default-btn:hover, #comment-btn:hover, #zubuz-submit-btn:hover {
+.zubuz-default-btn:hover,
+#comment-btn:hover,
+#zubuz-submit-btn:hover,
+#zubuz-account-btn:hover {
   color: var(--heading-color);
   background-color: var(--secondary-color);
 }
-.zubuz-default-btn span, #comment-btn span, #zubuz-submit-btn span {
+.zubuz-default-btn span,
+#comment-btn span,
+#zubuz-submit-btn span,
+#zubuz-account-btn span {
   position: relative;
   z-index: 10;
   display: inline-block;
 }
-.zubuz-default-btn.zubuz-header-btn, #comment-btn.zubuz-header-btn, #zubuz-submit-btn.zubuz-header-btn {
+.zubuz-default-btn.zubuz-header-btn,
+#comment-btn.zubuz-header-btn,
+#zubuz-submit-btn.zubuz-header-btn,
+#zubuz-account-btn.zubuz-header-btn {
   padding: 13px 29px;
 }
-.zubuz-default-btn:before, .zubuz-default-btn:after, #comment-btn:before, #comment-btn:after, #zubuz-submit-btn:before, #zubuz-submit-btn:after {
+.zubuz-default-btn:before, .zubuz-default-btn:after,
+#comment-btn:before,
+#comment-btn:after,
+#zubuz-submit-btn:before,
+#zubuz-submit-btn:after,
+#zubuz-account-btn:before,
+#zubuz-account-btn:after {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
 }
-.zubuz-default-btn:before, #comment-btn:before, #zubuz-submit-btn:before {
+.zubuz-default-btn:before,
+#comment-btn:before,
+#zubuz-submit-btn:before,
+#zubuz-account-btn:before {
   top: -110%;
   left: -10%;
   padding-bottom: 120%;
@@ -2616,11 +2637,17 @@ button#comment-btn {
   transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
   transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1), -webkit-transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
 }
-.zubuz-default-btn:hover:before, #comment-btn:hover:before, #zubuz-submit-btn:hover:before {
+.zubuz-default-btn:hover:before,
+#comment-btn:hover:before,
+#zubuz-submit-btn:hover:before,
+#zubuz-account-btn:hover:before {
   -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
   transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
 }
-.zubuz-default-btn:after, #comment-btn:after, #zubuz-submit-btn:after {
+.zubuz-default-btn:after,
+#comment-btn:after,
+#zubuz-submit-btn:after,
+#zubuz-account-btn:after {
   background: var(--secondary-color);
   content: "";
   -webkit-transform: translate3d(0, -100%, 0);
@@ -2629,7 +2656,10 @@ button#comment-btn {
   transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
   transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1), -webkit-transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
 }
-.zubuz-default-btn:hover:after, #comment-btn:hover:after, #zubuz-submit-btn:hover:after {
+.zubuz-default-btn:hover:after,
+#comment-btn:hover:after,
+#zubuz-submit-btn:hover:after,
+#zubuz-account-btn:hover:after {
   -webkit-transition-delay: 0.4s;
   transition-delay: 0.4s;
   -webkit-transition-timing-function: linear;
@@ -2639,23 +2669,44 @@ button#comment-btn {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-.zubuz-default-btn:hover span, #comment-btn:hover span, #zubuz-submit-btn:hover span {
+.zubuz-default-btn:hover span,
+#comment-btn:hover span,
+#zubuz-submit-btn:hover span,
+#zubuz-account-btn:hover span {
   -webkit-animation: HaCtvBtn_Exploit_MoveScaleUpInitial 0.3s forwards, HaCtvBtn_Exploit_MoveScaleUpEnd 0.3s forwards 0.3s;
   animation: HaCtvBtn_Exploit_MoveScaleUpInitial 0.3s forwards, HaCtvBtn_Exploit_MoveScaleUpEnd 0.3s forwards 0.3s;
 }
-.zubuz-default-btn.disabled, .zubuz-default-btn:disabled, #comment-btn.disabled, #comment-btn:disabled, #zubuz-submit-btn.disabled, #zubuz-submit-btn:disabled {
+.zubuz-default-btn.disabled, .zubuz-default-btn:disabled,
+#comment-btn.disabled,
+#comment-btn:disabled,
+#zubuz-submit-btn.disabled,
+#zubuz-submit-btn:disabled,
+#zubuz-account-btn.disabled,
+#zubuz-account-btn:disabled {
   opacity: 1;
 }
-.zubuz-default-btn.d-block, #comment-btn.d-block, #zubuz-submit-btn.d-block {
+.zubuz-default-btn.d-block,
+#comment-btn.d-block,
+#zubuz-submit-btn.d-block,
+#zubuz-account-btn.d-block {
   width: 100%;
 }
-.zubuz-default-btn.pill, #comment-btn.pill, #zubuz-submit-btn.pill {
+.zubuz-default-btn.pill,
+#comment-btn.pill,
+#zubuz-submit-btn.pill,
+#zubuz-account-btn.pill {
   border-radius: 50px;
 }
-.zubuz-default-btn.btn-icon, #comment-btn.btn-icon, #zubuz-submit-btn.btn-icon {
+.zubuz-default-btn.btn-icon,
+#comment-btn.btn-icon,
+#zubuz-submit-btn.btn-icon,
+#zubuz-account-btn.btn-icon {
   padding: 9px 24px;
 }
-.zubuz-default-btn:focus, #comment-btn:focus, #zubuz-submit-btn:focus {
+.zubuz-default-btn:focus,
+#comment-btn:focus,
+#zubuz-submit-btn:focus,
+#zubuz-account-btn:focus {
   box-shadow: none;
 }
 
@@ -3124,10 +3175,6 @@ h1.post__title {
 }
 .zubuz-hero-card {
   position: absolute;
-  transform: scale(0);
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.7s ease 0.7s;
   z-index: 0;
 }
 @media (max-width: 767px) {
@@ -3193,27 +3240,6 @@ h1.post__title {
   .zubuz-hero-card.card4 {
     width: 150px;
   }
-}
-
-.zubuz_card_loaded.card1 {
-  transform: scale(1);
-}
-
-.zubuz_card_loaded.card2 {
-  transform: scale(1);
-}
-
-.zubuz_card_loaded.card3 {
-  transform: scale(1);
-}
-
-.zubuz_card_loaded.card4 {
-  transform: scale(1);
-}
-
-.zubuz_card_loaded.zubuz-hero-card {
-  opacity: 1;
-  visibility: visible;
 }
 
 .zubuz-hero-btn-wrap {
@@ -3478,8 +3504,11 @@ span.zubuz-title-shape {
 .zubuz-counter-data.light h2, .zubuz-counter-data.light p {
   color: var(--white-color);
 }
-.zubuz-counter-data.primary-color em {
+.zubuz-counter-data em {
   font-style: normal;
+  color: var(--secondary-color);
+}
+.zubuz-counter-data.primary-color em {
   color: var(--primary-color);
 }
 .zubuz-counter-wrap2 {
@@ -3628,6 +3657,24 @@ span.zubuz-title-shape {
   color: var(--heading-color);
   background-color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
+}
+.zubuz-iconbox-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.zubuz-iconbox-header-data h4 {
+  margin-bottom: 3px;
+}
+.zubuz-iconbox-header-data p {
+  font-size: 16px;
+}
+.zubuz-iconbox-header .zubuz-iconbox-icon {
+  width: 80px;
+  height: 80px;
+  border: 1px solid var(--light-color);
+  background-color: transparent;
+  margin-bottom: 0;
 }
 .zubuz-iconbox-icon {
   width: 60px;
@@ -3866,7 +3913,7 @@ span.zubuz-title-shape {
   z-index: 0;
   -webkit-animation: waves 3s ease-in-out infinite;
   animation: waves 3s ease-in-out infinite;
-  background-color: var(--white-bg);
+  background-color: var(--dark-bg);
   z-index: -1;
 }
 .waves.waves-2 {
@@ -3874,6 +3921,7 @@ span.zubuz-title-shape {
   height: 200px;
   left: -40px;
   top: -40px;
+  background-color: var(--white-bg);
 }
 @media (max-width: 991px) {
   .waves.waves-2 {
@@ -3933,6 +3981,12 @@ span.zubuz-title-shape {
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
+}
+
+@media (max-width: 991px) {
+  img.video-sevice {
+    width: 75px;
+  }
 }
 
 .zubuz-testimonial-wrap {
@@ -4427,6 +4481,29 @@ span.zubuz-title-shape {
   font-size: 16px;
   color: #414141;
 }
+.zubuz-pricing-price .zubuz-price {
+  font-weight: 700;
+  font-size: 85px;
+  line-height: 1.05em; /* 116.667% */
+  letter-spacing: -0.1px;
+  color: var(--heading-color);
+  font-family: "Raleway", sans-serif;
+}
+@media (max-width: 1400px) {
+  .zubuz-pricing-price .zubuz-price {
+    font-size: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .zubuz-pricing-price .zubuz-price {
+    font-size: 48px;
+  }
+}
+@media (max-width: 479px) {
+  .zubuz-pricing-price .zubuz-price {
+    font-size: 36px;
+  }
+}
 .zubuz-pricing-description {
   padding-bottom: 22px;
   margin-bottom: 22px;
@@ -4507,7 +4584,8 @@ span.zubuz-title-shape {
 .zubuz-pricing-four-column .zubuz-pricing-wrap.active .zubuz-pricing-price p,
 .zubuz-pricing-four-column .zubuz-pricing-wrap.active .zubuz-pricing-description p,
 .zubuz-pricing-four-column .zubuz-pricing-wrap.active .zubuz-pricing-body p,
-.zubuz-pricing-four-column .zubuz-pricing-wrap.active .zubuz-pricing-body ul li {
+.zubuz-pricing-four-column .zubuz-pricing-wrap.active .zubuz-pricing-body ul li,
+.zubuz-pricing-four-column .zubuz-pricing-wrap.active .zubuz-price {
   color: var(--white-color);
 }
 .zubuz-pricing-four-column .zubuz-pricing-wrap.active .zubuz-pricing-description {
@@ -4536,6 +4614,283 @@ span.zubuz-title-shape {
 }
 .zubuz-pricing-four-column .zubuz-pricing-body ul li img {
   top: 4px;
+}
+
+.zubuz-portfolio-menu ul li.active {
+  color: #fff;
+  position: relative;
+  transition: all 0.4s;
+  background-color: #092C4C;
+}
+
+.zubuz-portfolio-menu {
+  text-align: center;
+  margin-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .zubuz-portfolio-menu {
+    margin-bottom: 40px;
+  }
+}
+.zubuz-portfolio-menu ul li {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 20px 24px;
+  margin: 0 3px;
+  line-height: 1;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.4s;
+  display: inline-block;
+  border: 1px solid var(--heading-color);
+}
+@media (max-width: 479px) {
+  .zubuz-portfolio-menu ul li {
+    font-size: 15px;
+    padding: 14px 12px;
+  }
+}
+.zubuz-portfolio-menu ul li::first-child {
+  margin-left: 0;
+}
+.zubuz-portfolio-menu ul li:last-child {
+  margin-right: 0;
+}
+.zubuz-portfolio-menu ul li.active {
+  color: #fff;
+  background-color: var(--blue-bg);
+  border: 1px solid var(--primary-color);
+}
+.zubuz-portfolio-column {
+  margin-left: -24px;
+}
+.zubuz-portfolio-wrap:hover .zubuz-portfolio-data {
+  opacity: 1;
+  bottom: 40px;
+  visibility: visible;
+}
+.zubuz-portfolio-wrap:hover .zubuz-portfolio-thumb:before {
+  opacity: 1;
+  visibility: visible;
+}
+.zubuz-portfolio-thumb {
+  margin-left: 24px;
+  margin-bottom: 24px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.zubuz-portfolio-thumb:before {
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 10px;
+  position: absolute;
+  transition: all 0.4s;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50.52%, #000 89.06%);
+  mix-blend-mode: multiply;
+}
+.zubuz-portfolio-data {
+  bottom: 0;
+  left: 40px;
+  opacity: 0;
+  visibility: hidden;
+  width: calc(100% - 80px);
+  position: absolute;
+  transition: all 0.4s;
+}
+@media (max-width: 1199px) {
+  .zubuz-portfolio-data {
+    left: 30px;
+    width: calc(100% - 60px);
+  }
+}
+.zubuz-portfolio-data h3 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: var(--white-color);
+}
+@media (max-width: 1199px) {
+  .zubuz-portfolio-data h3 {
+    font-size: 30px;
+  }
+}
+.zubuz-portfolio-data p {
+  margin: 0;
+  color: var(--white-color);
+}
+.zubuz-portfolio-icon {
+  top: 30px;
+  right: 0;
+  position: absolute;
+}
+
+.zubuz-portfolio-wrap2:hover .zubuz-portfolio-thumb2:before {
+  opacity: 1;
+  visibility: visible;
+}
+.zubuz-portfolio-thumb2 {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.zubuz-portfolio-thumb2 img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 8.5/4;
+  object-fit: cover;
+  object-position: top center;
+}
+.zubuz-portfolio-thumb2:before {
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 10px;
+  position: absolute;
+  transition: all 0.4s;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50.52%, #000 89.06%);
+  mix-blend-mode: multiply;
+}
+.zubuz-portfolio-data2 {
+  position: relative;
+  padding: 24px 0 40px;
+}
+@media (max-width: 991px) {
+  .zubuz-portfolio-data2 {
+    padding: 24px 0;
+  }
+}
+.zubuz-portfolio-data2 h3 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+@media (max-width: 1199px) {
+  .zubuz-portfolio-data2 h3 {
+    font-size: 30px;
+  }
+}
+.zubuz-portfolio-data2 p {
+  margin: 0;
+}
+.zubuz-portfolio-icon2 {
+  right: 0;
+  top: 60px;
+  position: absolute;
+}
+@media (max-width: 991px) {
+  .zubuz-portfolio-icon2 svg {
+    width: 30px;
+  }
+}
+.zubuz-portfolio-icon2 svg path {
+  transition: all 0.4s;
+  stroke: var(--heading-color);
+}
+.zubuz-portfolio-icon2 svg path:hover {
+  stroke: var(--primary-color);
+}
+
+.zubuz-portfolio-details-thumb {
+  margin-bottom: 40px;
+}
+.zubuz-portfolio-details-thumb img {
+  border-radius: 10px;
+  aspect-ratio: 8/5;
+}
+
+.zubuz-portfolio-info {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 24px;
+  margin-bottom: 70px;
+  justify-content: space-between;
+}
+@media (max-width: 991px) {
+  .zubuz-portfolio-info {
+    justify-content: center;
+  }
+}
+.zubuz-portfolio-info-item p {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #7F8995;
+}
+@media (max-width: 991px) {
+  .zubuz-portfolio-info-item p {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 991px) {
+  .zubuz-portfolio-info-item {
+    flex: 0 0 50%;
+    text-align: center;
+  }
+}
+
+.zubuz-portfolio-details-content {
+  margin-bottom: 80px;
+}
+.zubuz-portfolio-details-content-wrap {
+  margin-right: 80px;
+}
+@media (max-width: 991px) {
+  .zubuz-portfolio-details-content-wrap {
+    margin-right: 0;
+    margin-bottom: 35px;
+  }
+}
+.zubuz-portfolio-details-content:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 991px) {
+  .zubuz-portfolio-details-content {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+.zubuz-portfolio-details-content h2 {
+  margin-bottom: 24px;
+}
+.zubuz-portfolio-details-content h4 {
+  margin-bottom: 20px;
+}
+@media (max-width: 991px) {
+  .zubuz-portfolio-details-content ul {
+    text-align: left;
+  }
+}
+.zubuz-portfolio-details-content ul li {
+  position: relative;
+  padding-left: 20px;
+}
+.zubuz-portfolio-details-content ul li:before {
+  content: "";
+  left: 0;
+  top: 11px;
+  width: 6px;
+  height: 6px;
+  border-radius: 10px;
+  position: absolute;
+  background-color: var(--body-color);
+}
+
+.zubuz-portfolio-details-thumb-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.zubuz-portfolio-details-thumb-item {
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 @media (max-width: 1199px) {
@@ -4584,6 +4939,193 @@ span.zubuz-title-shape {
 }
 .zubuz-table-wrap table tbody tr td:first-child {
   text-align: left;
+}
+
+.zubuz-extra-section {
+  padding: 200px 0 130px;
+}
+@media (max-width: 991px) {
+  .zubuz-extra-section {
+    padding: 160px 0 100px;
+  }
+}
+@media (max-width: 767px) {
+  .zubuz-extra-section {
+    padding: 160px 0 100px;
+  }
+}
+@media (max-width: 479px) {
+  .zubuz-extra-section {
+    padding: 130px 0 100px;
+  }
+}
+
+.zubuz-account-checkbox-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a.forgot-password {
+  font-size: 16px;
+  color: var(--heading-color);
+}
+
+.zubuz-account-wrap {
+  padding: 40px;
+  max-width: 856px;
+  border-radius: 10px;
+  margin: 0 auto;
+  border: 1px solid var(--heading-color);
+}
+@media (max-width: 991px) {
+  .zubuz-account-wrap {
+    padding: 30px;
+  }
+}
+.zubuz-account-field {
+  margin-bottom: 24px;
+}
+.zubuz-account-field label {
+  font-weight: 700;
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.zubuz-account-field input {
+  font-weight: 400;
+  border: 1px solid var(--heading-color) !important;
+}
+.zubuz-account-field input:focus, .zubuz-account-field input:focus {
+  border: 1px solid var(--primary-color) !important;
+}
+.zubuz-account-checkbox input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+.zubuz-account-checkbox label {
+  position: relative;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+.zubuz-account-checkbox label a {
+  color: var(--body-color);
+  font-weight: 600;
+  margin: 0 4px;
+}
+.zubuz-account-checkbox label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 1.5px solid #7F8995;
+  padding: 7px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+.zubuz-account-checkbox input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 9px;
+  left: 6px;
+  width: 5px;
+  height: 9px;
+  border: solid var(--dark-bg);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+button#zubuz-account-btn {
+  width: 100%;
+  margin: 50px 0;
+}
+
+.zubuz-or {
+  z-index: 0;
+  line-height: 1;
+  position: relative;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.zubuz-or p {
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+  padding: 0 12px;
+  display: inline-block;
+  text-align: center;
+  background-color: var(--white-bg);
+}
+.zubuz-or::before {
+  content: "";
+  left: 0;
+  top: 9px;
+  width: 100%;
+  height: 1px;
+  z-index: -1;
+  position: absolute;
+  background-color: #E6E6E6;
+}
+
+a.zubuz-connect-login {
+  height: 60px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 3px;
+  line-height: 60px;
+  display: flex;
+  margin-bottom: 24px;
+  align-items: center;
+  justify-content: center;
+  color: var(--heading-color);
+  border: 1px solid var(--dark-bg);
+}
+a.zubuz-connect-login img {
+  margin-right: 15px;
+}
+
+.zubuz-account-bottom {
+  margin-top: 40px;
+  text-align: center;
+}
+.zubuz-account-bottom p {
+  font-size: 16px;
+}
+.zubuz-account-bottom a {
+  font-weight: 600;
+  color: var(--body-color);
+}
+
+.zubuz-errors-wrap {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.zubuz-errors-thumb {
+  margin-bottom: 80px;
+}
+@media (max-width: 991px) {
+  .zubuz-errors-thumb {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .zubuz-errors-thumb {
+    margin-bottom: 40px;
+  }
 }
 
 .zubuz-thumb {
@@ -4749,7 +5291,7 @@ span.zubuz-title-shape {
 }
 @media (max-width: 991px) {
   .zubuz-v3-thumb2 {
-    margin-right: 0;
+    margin-left: 0;
     margin-bottom: 40px;
   }
 }
@@ -4774,6 +5316,18 @@ span.zubuz-title-shape {
 @media (max-width: 767px) {
   .zubuz-v3-card2 {
     display: none;
+  }
+}
+
+.zubuz-career-thumb {
+  border-radius: 20px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+@media (max-width: 991px) {
+  .zubuz-career-thumb {
+    margin-right: 0;
+    margin-bottom: 40px;
   }
 }
 
@@ -5002,72 +5556,6 @@ span.zubuz-title-shape {
   border: 1px solid var(--light-color);
 }
 
-.zubuz-service-details-thumb {
-  border-radius: 20px;
-  overflow: hidden;
-  margin-bottom: 75px;
-  border: 5px solid var(--heading-color);
-}
-@media (max-width: 991px) {
-  .zubuz-service-details-thumb {
-    margin-bottom: 55px;
-  }
-}
-@media (max-width: 767px) {
-  .zubuz-service-details-thumb {
-    margin-bottom: 35px;
-  }
-}
-
-.zubuz-user-interface h3 {
-  margin-top: 35px;
-  margin-bottom: 15px;
-}
-.zubuz-user-interface ul li {
-  position: relative;
-  padding-left: 15px;
-  margin-bottom: 30px;
-}
-.zubuz-user-interface ul li:last-child {
-  margin-bottom: 0;
-}
-.zubuz-user-interface ul li:before {
-  content: " ";
-  left: 0;
-  top: 12px;
-  width: 5px;
-  height: 5px;
-  border-radius: 100px;
-  position: absolute;
-  background-color: var(--dark-bg);
-}
-
-.zubuz-service-details-thumb2 {
-  border-radius: 20px;
-  overflow: hidden;
-  border: 5px solid var(--heading-color);
-}
-@media (max-width: 991px) {
-  .zubuz-service-details-thumb2 {
-    margin-bottom: 30px;
-  }
-}
-
-.zubuz-our-approach {
-  margin-top: 45px;
-}
-@media (max-width: 991px) {
-  .zubuz-our-approach {
-    margin-top: 30px;
-  }
-}
-
-@media (max-width: 991px) {
-  .zubuz-video-service img {
-    width: 75px;
-  }
-}
-
 .zubuz-about-thumb {
   margin-bottom: 24px;
 }
@@ -5078,6 +5566,139 @@ span.zubuz-title-shape {
 .zubuz-divider {
   height: 1px;
   border-top: 1px solid var(--light-color);
+}
+
+.zubuz-jobs-item {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  margin-bottom: 24px;
+  border-radius: 20px;
+  border: 1px solid #CCC;
+  transition: all 0.4s;
+  display: grid;
+  grid-template-columns: 50% 30% 20%;
+}
+@media (max-width: 991px) {
+  .zubuz-jobs-item {
+    row-gap: 24px;
+    grid-template-columns: 100%;
+  }
+}
+.zubuz-jobs-item:hover {
+  border: 1px solid var(--white-color);
+  box-shadow: 0px 4px 80px 0px rgba(0, 0, 0, 0.08);
+}
+.zubuz-jobs-item-content {
+  padding-right: 15%;
+}
+@media (max-width: 1199px) {
+  .zubuz-jobs-item-content {
+    padding-right: 8%;
+  }
+}
+@media (max-width: 991px) {
+  .zubuz-jobs-item-content {
+    padding-right: 0;
+  }
+}
+.zubuz-jobs-item-content:last-child {
+  padding-right: 0;
+}
+.zubuz-jobs-item-content h3 {
+  margin-bottom: 15px;
+}
+.zubuz-jobs-item-content span {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.zubuz-jobs-item-content span:last-child {
+  margin-bottom: 0;
+}
+
+.zubuz-jobs-apply-btn {
+  text-align: right;
+}
+@media (max-width: 991px) {
+  .zubuz-jobs-apply-btn {
+    text-align: left;
+  }
+}
+
+.zubuz-career-details-content h2 {
+  margin-bottom: 20px;
+}
+.zubuz-career-details-content h3 {
+  margin-bottom: 15px;
+}
+.zubuz-career-details-content img {
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.zubuz-position-requirement-item {
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+.zubuz-position-requirement-item:last-child {
+  margin-bottom: 0;
+}
+.zubuz-position-requirement-item span {
+  font-weight: 600;
+}
+.zubuz-position-requirement-item p {
+  padding-left: 35px;
+  position: relative;
+  margin: 0;
+}
+.zubuz-position-requirement-item p::before {
+  content: "";
+  left: 20px;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 10px;
+  position: absolute;
+  background-color: var(--dark-bg);
+}
+
+.zubuz-job-role {
+  padding: 24px;
+  border-radius: 10px;
+  background-color: var(--blue-bg);
+}
+@media (max-width: 991px) {
+  .zubuz-job-role {
+    margin-top: 35px;
+  }
+}
+.zubuz-job-role h3 {
+  margin-bottom: 20px;
+  color: var(--white-color);
+}
+.zubuz-job-role ul li {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--white-color);
+  position: relative;
+  padding-left: 30px;
+}
+.zubuz-job-role ul li:last-child {
+  margin-bottom: 0;
+}
+.zubuz-job-role ul li img {
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+.zubuz-job-role a.zubuz-default-btn {
+  width: 100%;
+  text-align: center;
+  margin-top: 24px;
+  color: var(--primary-color);
+  background-color: var(--white-bg);
 }
 
 .zubuz-main-form {
@@ -5113,7 +5734,7 @@ span.zubuz-title-shape {
 }
 .zubuz-loading-dots--dot {
   animation: dot-keyframes 1.5s infinite ease-in-out;
-  background-color: var(--accent-bg);
+  background-color: var(--primary-bg);
   border-radius: 10px;
   display: inline-block;
   height: 12px;
@@ -5168,7 +5789,7 @@ span.zubuz-title-shape {
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  background: var(--accent-color);
+  background: var(--secondary-color);
   animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
 
@@ -5216,5 +5837,150 @@ span.zubuz-title-shape {
     transform: translate(24px, 0);
   }
 }
+.zubuz-countdown-wrap {
+  max-width: 856px;
+  margin: 0 auto;
+  display: grid;
+  gap: 24px;
+  margin-bottom: 50px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+@media (max-width: 991px) {
+  .zubuz-countdown-wrap {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .zubuz-countdown-wrap {
+    margin-bottom: 30px;
+  }
+}
+.zubuz-countdown-item {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  flex-direction: column;
+  background-color: var(--dark-bg);
+}
+@media (max-width: 767px) {
+  .zubuz-countdown-item {
+    height: 150px;
+  }
+}
+.zubuz-countdown-item p {
+  font-weight: 600;
+  margin-top: 7px;
+  color: var(--secondary-color);
+}
+@media (max-width: 991px) {
+  .zubuz-countdown-item p {
+    font-size: 20px;
+  }
+}
+
+.number {
+  color: var(--white-color);
+  font-size: 85px;
+  font-weight: 700;
+  line-height: 1.05em; /* 116.667% */
+  letter-spacing: -0.1px;
+  font-family: "Raleway", sans-serif;
+}
+@media (max-width: 1400px) {
+  .number {
+    font-size: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .number {
+    font-size: 48px;
+  }
+}
+@media (max-width: 479px) {
+  .number {
+    font-size: 36px;
+  }
+}
+
+.zubuz-coming-newsletter {
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+.zubuz-coming-newsletter input {
+  color: #666;
+  padding-right: 158px !important;
+  margin-bottom: 12px;
+  border: 1px solid #ccc !important;
+}
+@media (max-width: 767px) {
+  .zubuz-coming-newsletter input {
+    padding-right: 24px !important;
+  }
+}
+.zubuz-coming-newsletter input:focus, .zubuz-coming-newsletter input:focus {
+  border: 1px solid var(--primary-color) !important;
+}
+.zubuz-coming-newsletter input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: #666;
+  opacity: 1;
+}
+.zubuz-coming-newsletter input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #666;
+  opacity: 1;
+}
+.zubuz-coming-newsletter input::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #666;
+  opacity: 1;
+}
+.zubuz-coming-newsletter input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #666;
+  opacity: 1;
+}
+.zubuz-coming-newsletter input::-ms-input-placeholder { /* Microsoft Edge */
+  color: #666;
+  opacity: 1;
+}
+.zubuz-coming-newsletter input::placeholder { /* Most modern browsers support this now. */
+  color: #666;
+  opacity: 1;
+}
+.zubuz-coming-newsletter p {
+  color: #666;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.5px;
+}
+
+button#zubuz-notified-btn {
+  border-radius: 3px;
+  width: 150px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  transition: all 0.4s;
+  color: var(--white-color);
+  background-color: var(--blue-bg);
+}
+button#zubuz-notified-btn:hover {
+  color: var(--heading-color);
+  background-color: var(--secondary-color);
+}
+@media (max-width: 767px) {
+  button#zubuz-notified-btn {
+    position: static;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+}
+
 /*1.4 themes css*/
 /*# sourceMappingURL=app.css.map */

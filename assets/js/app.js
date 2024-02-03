@@ -37,23 +37,23 @@
     /*--------------------------------------------------------------
     ZUBUZ RTL JS INIT
     --------------------------------------------------------------*/
-    var bodyEl = document.querySelector('body');
-    var btnEl = document.querySelector('#zubuz-ltr-rtl');
-    btnEl.addEventListener('click', function () {
-      var dir = bodyEl.getAttribute('dir') === 'rtl' ? 'ltr' : 'rtl';
-      bodyEl.setAttribute('dir', dir);
-    }, false);
+    // const bodyEl = document.querySelector('body')
+    // const btnEl = document.querySelector('#zubuz-ltr-rtl')
+    // btnEl.addEventListener('click', () => {
+    //   const dir = (bodyEl.getAttribute('dir') === 'rtl') ? 'ltr' : 'rtl'
+    //   bodyEl.setAttribute('dir', dir)
+    // }, false)
 
     /*--------------------------------------------------------------
     ZUBUZ MENU SIDEBAR JS INIT
     --------------------------------------------------------------*/
-    $(".zubuz-rtl-open").on("click", function (e) {
-      $(".zubuz-sidemenu-column, .offcanvas-overlay").addClass("active");
-      event.preventDefault(e);
-    });
-    $(".zubuz-sidemenu-close, .offcanvas-overlay").on("click", function () {
-      $(".zubuz-sidemenu-column, .offcanvas-overlay").removeClass("active");
-    });
+    // $(".zubuz-rtl-open").on("click", function (e) {
+    //   $(".zubuz-sidemenu-column, .offcanvas-overlay").addClass("active");
+    //   event.preventDefault(e);
+    // });
+    // $(".zubuz-sidemenu-close, .offcanvas-overlay").on("click", function () {
+    //     $(".zubuz-sidemenu-column, .offcanvas-overlay").removeClass("active");
+    // });
 
     /*--------------------------------------------------------------
     ZUBUZ MENU SIDEBAR JS INIT
